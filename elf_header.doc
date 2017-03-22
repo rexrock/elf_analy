@@ -1,0 +1,24 @@
+        |  占位    单位    值类型   含义 
+=========================================================================
+        |   16      B        ----   魔数
+ part 1 |   2       B        half   type      
+        |   2       B        half   machine
+        |   4       B        word   version
+=========================================================================
+ part 2 |
+        -----------------------------------------------------------------
+ ELF.32 |   4       B        ADDR   entry point address in vma
+        |   4       B        OFF    offset of program headers in the file
+        |   4       B        OFF    offset of section headers in the file
+        -----------------------------------------------------------------
+ ELF.64 |   8       B        ADDR   entry point address in vma
+        |   8       B        OFF    offset of program headers in the file
+        |   8       B        OFF    offset of section headers in the file
+=========================================================================
+        |   4       B        word   flags
+        |   2       B        half   size   of this    header
+ part 3 |   2       B        half   size   of program headers
+        |   2       B        half   number of program headers
+        |   2       B        half   size   of section headers
+        |   2       B        half   number of section headers
+        |   2       B        half   sections headers string table index
